@@ -1,0 +1,157 @@
+/* Heading */
+h1 {
+    margin: 80px 0;
+    text-align: center;
+}
+
+.charContent {
+    margin: 0 200px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.characters {
+    background-color: whitesmoke;
+    width: 220px;
+    height: 330px;
+    padding: 20px 10px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.figureChar {
+    display: flex;
+    justify-content: center;
+}
+
+.imgChar {
+    position: absolute;
+    height: 230px;
+    top: 80px;
+}
+
+/*Mario styling*/
+.marioName {
+    color: #e40001;
+    font-size: 27px;
+    font-weight: bold;
+    text-shadow: #e4000067 1px -2px 1px;
+}
+
+#superMario {
+    border: 5px #e40001 dashed;
+    background-color: #f19191;
+}
+
+/*Luigi styling*/
+.luigiName {
+    color: #15a301;
+    font-size: 27px;
+    font-weight: bold;
+    text-shadow: #14a30173 1px -2px 1px;
+}
+
+#luigi {
+    background-color: #75c06f;
+    border: 5px #15a301 dashed;
+}
+
+/*Peach styling*/
+.peachName {
+    color: #ff6d9d;
+    font-size: 27px;
+    font-weight: bold;
+    text-shadow: #ff6d9e80 1px -2px 1px;
+}
+
+#peach {
+    background-color: #fdcbe3;
+    border: 5px #ff6d9d dashed;
+}
+
+/*Bowser styling*/
+.bowserName {
+    color: #ffc216;
+    font-size: 27px;
+    font-weight: bold;
+    text-shadow: #ecb2149a 1px -2px 1px;
+}
+
+#bowser {
+    background-color: #f4e998;
+    border: 5px #ffc216 dashed;
+}
+
+/* Animasjon infobokser - Hover/Opacity */
+#superMario p,
+#luigi p,
+#peach p,
+#bowser p {
+    opacity: 0;
+}
+
+#superMario:hover p,
+#luigi:hover p,
+#peach:hover p,
+#bowser:hover p {
+    opacity: 1;
+}
+
+#superMario:hover .imgChar,
+#luigi:hover .imgChar,
+#peach:hover .imgChar,
+#bowser:hover .imgChar {
+    opacity: 0;
+}
+
+/*Blue Mushroom And its Animation*/
+#blueMushroom {
+    height: 30px;
+    position: relative;
+    right: 55%;
+    bottom: 48px;
+    animation-name: blueMushroomAnimation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/*Footer Element*/
+#footer {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    top: 101px;
+    z-index: 10;
+}
+
+@keyframes blueMushroomAnimation {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 100%;
+    }
+    90% {
+        left: 0%;
+    }
+    100% {
+        left: -15%;
+    }
+}
+
+#logo {
+    width: 12%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 15px 0 0 20px;
+    z-index: 10;
+    bottom: 87.5%;
+}

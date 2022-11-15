@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MarioMainPage</title>
+        <link rel="stylesheet" href="/css/standard.css" type="text/css" />
+        <link rel="stylesheet" href="/css/mainpage.css" type="text/css" />
+    </head>
+    <body>
+        <main id="mainContainer">
+            <img id="logo" src="/img/SMBLogo.png" alt="Super Mario Bros Logo" />
+
+            <!--Cloud Img-->
+            <img id="cloud1" src="/img/cloud.png" alt="cloud" />
+            <img id="cloud2" src="/img/cloud.png" alt="cloud" />
+            <img id="cloud3" src="/img/cloud.png" alt="cloud" />
+            <img id="cloud4" src="/img/cloud.png" alt="cloud" />
+
+            <!--Bullet Img-->
+            <img id="bullet" src="/img/bullet.png" alt="bullet" />
+
+            <!--Link til wikiside-->
+            <p id="press">PRESS</p>
+            <a href="/wikiPage.html">
+                <img class="coin" src="/img/coin.png" alt="coin" />
+            </a>
+            <p id="start">TO START</p>
+
+            <img id="redMushroom" src="/img/redMushroom.webp" alt="Red Mushroom" />
+
+            <!--Box i midten-->
+            <div class="brickBox">
+                <img id="brick1" src="/img/brick.png" alt="brick" />
+                <img id="brick2" src="/img/brick.png" alt="brick" />
+                <img id="brick3" src="/img/brick.png" alt="brick" />
+                <img id="que" src="/img/queBrick.jpeg" alt="question brick" />
+                <img id="brick4" src="/img/brick.png" alt="brick" />
+            </div>
+
+            <img id="pipe" src="/img/pipe.webp" alt="green pipe" />
+
+            <img id="piranhaPlant" src="/img/piranha.webp" alt="piranha plant" />
+
+            <img id="flower" src="/img/flower.webp" alt="flower" />
+
+            <img id="blueMushroom" src="/img/blueMushroom.png" alt="blue mushroom" />
+
+            <img id="brownMushroom" src="/img/brownMushroom.webp" alt="brownMushroom" />
+
+            <img id="footer" src="/img/footer.jpeg" alt="groundimg" />
+        </main>
+
+        <!--LydFil og Autostart Funksjon-->
+        <iframe src="/audio/250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+        <audio id="player" autoplay loop>
+            <source src="/audio/Overworld_Theme_New_Super_Mario_Bros_DS.mp3" type="audio/mp3" />
+        </audio>
+    </body>
+</html>

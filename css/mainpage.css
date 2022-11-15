@@ -1,0 +1,280 @@
+.mainContainer {
+    width: 1024px;
+    height: 768px;
+    z-index: 1;
+}
+
+#logo {
+    width: 12%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 15px 0 0 20px;
+}
+
+/* Her er Cloud stylingene*/
+#cloud1 {
+    position: absolute;
+    height: 15%;
+    top: 20%;
+    left: 3%;
+    opacity: 0.7;
+    z-index: 10;
+    transform: rotateY(359deg);
+    animation: cloudScale 2.2s infinite linear;
+}
+
+#cloud2 {
+    position: absolute;
+    height: 15%;
+    top: 4%;
+    left: 28%;
+    opacity: 0.8;
+    z-index: 1;
+    transform: rotateY(359deg);
+    animation: cloudScale 2s infinite linear;
+}
+
+#cloud3 {
+    position: absolute;
+    height: 15%;
+    top: 15%;
+    right: 20%;
+    transform: scaleX(-1);
+    opacity: 0.6;
+    z-index: 2;
+    transform: rotateY(359deg);
+    animation: cloudScale 1.9s infinite linear;
+}
+
+#cloud4 {
+    position: absolute;
+    height: 15%;
+    top: 40%;
+    right: 5%;
+    transform: scaleX(-1);
+    opacity: 0.7;
+    transform: rotateY(359deg);
+    animation: cloudScale 2.1s infinite linear;
+}
+
+@keyframes cloudScale {
+    from {
+        transform: rotateY(160deg);
+    }
+    to {
+        transform: rotateY(200deg);
+    }
+}
+
+/* Bullet Styling og Aninmasjon */
+#bullet {
+    position: absolute;
+    height: 7%;
+    top: 18%;
+    left: 110%;
+    z-index: 3;
+    animation: bulletAnimation 7s infinite linear;
+}
+
+@keyframes bulletAnimation {
+    100% {
+        left: -110%;
+    }
+    0% {
+        right: 150%;
+    }
+}
+
+/* SenterTekst og Coin med følgende Animasjoner */
+#press {
+    position: absolute;
+    top: 29%;
+    right: 53.5%;
+    font-size: 200%;
+    animation: textAnimation 1s linear infinite;
+}
+
+.coin {
+    position: absolute;
+    background-color: transparent;
+    height: 6%;
+    top: 31%;
+    right: 49%;
+    animation: coinRotations 5s infinite linear;
+}
+
+@keyframes coinRotations {
+    0% {
+        transform: rotateY(0deg);
+    }
+ 
+    50% {
+        transform: rotateY(360deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+#start {
+    position: absolute;
+    top: 29%;
+    right: 39%;
+    font-size: 200%;
+    animation: textAnimation 1s linear infinite;
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 100%;
+    }
+ 
+    50% {
+        opacity: 40%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+#redMushroom {
+    position: absolute;
+    height: 6%;
+    left: 40%;
+    bottom: 51.3%;
+    animation: redMushroomAnimation 10s infinite linear;
+}
+
+@keyframes redMushroomAnimation {
+    0% {
+        left: 38%;
+    }
+    50% {
+        left: 57%;
+    }
+    100% {
+        left: 38%;
+    }
+}
+
+/* Blokkene Midt på Nettsiden */
+.brickBox {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    top: 48.8%;
+    left: 4%;
+}
+
+#brick1,
+#brick2,
+#brick3,
+#brick4,
+#que {
+    width: 5%;
+}
+
+#pipe {
+    position: absolute;
+    height: 20%;
+    bottom: 14%;
+    left: 14%;
+    z-index: 2;
+}
+
+#piranhaPlant {
+    position: absolute;
+    height: 20%;
+    z-index: 1;
+    animation: piranhaAnimation 10s infinite linear;
+}
+
+@keyframes piranhaAnimation {
+    0% {
+        left: 15.5%;
+        bottom: 10%;
+    }
+    50% {
+        left: 15.5%;
+        bottom: 26.3%;
+    }
+    100% {
+        left: 15.5%;
+        bottom: 10%;
+    }
+}
+
+#flower {
+    height: 8%;
+    position: absolute;
+    right: 65%;
+    bottom: 14.8%;
+    transform: rotate(180deg);
+    animation: flowerRotation 1.5s infinite linear;
+}
+
+@keyframes flowerRotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#blueMushroom {
+    height: 4%;
+    position: absolute;
+    right: 55%;
+    bottom: 15%;
+    animation: blueMushroomAnimation 15s infinite linear;
+}
+
+@keyframes blueMushroomAnimation {
+    0% {
+        left: 35%;
+    }
+    50% {
+        left: 78%;
+    }
+    100% {
+        left: 35%;
+    }
+}
+
+#brownMushroom {
+    height: 10%;
+    position: absolute;
+    right: 15%;
+    bottom: 14.9%;
+    transform: rotateZ(0deg);
+    transition: transform 1s;
+}
+
+#brownMushroom:hover {
+    transform: rotateZ(180deg);
+}
+
+#footer {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: flex-end;
+    bottom: 0%;
+    z-index: 10;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>MarioWikiPage</title>
+        
+        <link rel="stylesheet" href="/css/standard.css" type="text/css" />
+        <link rel="stylesheet" href="/css/wikiPage.css" type="text/css" />
+    </head>
+
+    <body>
+        <img id="logo" src="/img/SMBLogo.png" alt="Super Mario Bros Logo" />
+
+        <h1>Hover over the characters to read about them!</h1>
+
+        <main class="charContent">
+            <!--Mario tekstbox-->
+            <div class="characters" id="superMario">
+                <span class="marioName">Super Mario</span>
+
+                <figure class="figureChar">
+                    <img
+                        class="imgChar"
+                        src="/img/mario.png"
+                        alt="Super Mario"
+                    />
+                </figure>
+
+                <p>Did you know i'm actually a plumber?</p>
+                <p>
+                    Besides my plumbing skills, I have a lot of fun combating my
+                    worst enemy Bowser.
+                </p>
+                <p>
+                    I'm just thinking out loud, and I think he's jelous of me,
+                    because he usually captures my princess Peach...
+                </p>
+                <p>
+                    Anyway, I always have my twin brother Luigi by my side to
+                    rescue her!
+                </p>
+            </div>
+
+            <!--Luigi tekstboks-->
+            <div class="characters" id="luigi">
+                <span class="luigiName">Luigi</span>
+
+                <figure class="figureChar">
+                    <img class="imgChar" src="/img/luigi.png" alt="Luigi" />
+                </figure>
+
+                <p>
+                    You probably remember me as the "green guy" or even the "2
+                    player"...
+                </p>
+                <p>
+                    I might be slightly younger and lived in my fraternal twin
+                    brother's shadow most of my life, but I'm taller, got the
+                    mustache, AND can certainly save the Princess as well!
+                </p>
+                <p>Just don't keep her in a high tower. I refuse to climb!</p>
+            </div>
+
+            <!--Peach tekstboks-->
+            <div class="characters" id="peach">
+                <span class="peachName">Peach</span>
+
+                <figure class="figureChar">
+                    <img class="imgChar" src="/img/peach.png" alt="Peach" />
+                </figure>
+                <p>
+                    Princess of what, you may ask? I'm the Princess of Mushroom
+                    Kingdom!
+                </p>
+                <p>
+                    That's also one of the reasons the evil Bowser captures me,
+                    besides the facts that I've turned him down multiple times,
+                    but he always ends up taking me against my will...
+                </p>
+                <p>
+                    Luckily I can rely on the twin brother's who always come to
+                    the rescue!
+                </p>
+            </div>
+
+            <!--Bowser tekstboks-->
+            <div class="characters" id="bowser">
+                <span class="bowserName">Bowser</span>
+
+                <figure class="figureChar">
+                    <img class="imgChar" src="/img/bowser.png" alt="Bowser" />
+                </figure>
+
+                <p>You might know me as the King of the Koopas, Mohahaha!</p>
+                <p>
+                    Do you know what the King is missing? That's right, his
+                    Queen... And I will destroy anyone who comes in the way of
+                    getting her!
+                </p>
+                <p>Wish me luck on my upcoming date with the Princess.</p>
+            </div>
+        </main>
+
+        <img id="footer" src="/img/footer.jpeg" alt="Grounding" />
+        <img
+            id="blueMushroom"
+            src="/img/blueMushroom.png"
+            alt="Blue mushroom"
+        />
+        
+        <!--LydFil og Autostart Funksjon-->
+        <iframe
+            src="/audio/250-milliseconds-of-silence.mp3"
+            allow="autoplay"
+            id="audio"
+            style="display: none"
+        ></iframe>
+        <audio id="player" autoplay loop>
+            <source
+                src="/audio/Overworld_Theme_New_Super_Mario_Bros_DS.mp3"
+                type="audio/mp3"
+            />
+        </audio>
+    </body>
+</html>
